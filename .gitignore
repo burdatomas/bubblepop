@@ -1,30 +1,35 @@
+# Composer
+vendor/
+composer.lock
+
+# Node.js
+node_modules/
+npm-debug.log
+server/price-scraper/node_modules/
+
+# Docker
+*.log
+docker-compose.yml.bak
+
 # WordPress
 wordpress/wp-content/uploads/
 wordpress/wp-content/cache/
 wordpress/wp-content/upgrade/
-wordpress/wp-content/plugins/*/
-!wordpress/wp-content/plugins/woo-shops-library/
-!wordpress/wp-content/plugins/other-plugin/
-wordpress/wp-config-local.php
-wordpress/.htaccess
-*.sql
-*.log
+wordpress/wp-content/*.log
+wordpress/wp-config.php
 
-# Node.js
-server/price-scraper/node_modules/
-server/price-scraper/logs/
-server/price-scraper/.env
-server/price-scraper/tests/tmp/
+# Include WooCommerce plugin files
+!wordpress/wp-content/plugins/woocommerce/
 
-# General
-.DS_Store
-.vscode/*
-!.vscode/settings.json
-!.vscode/bubblepop.code-workspace
+# Temporary files
+*.tmp
 *.bak
 *.swp
-*.swo
-vendor/
-composer.lock
-package-lock.jsonvendor/
-!wordpress/wp-content/plugins/woocommerce/
+*~
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
