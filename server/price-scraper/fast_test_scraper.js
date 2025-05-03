@@ -95,7 +95,7 @@ async function fastTestScraper(urls, currency, methodsByDomain) {
       execSync('sudo killall -9 chrome || true', { stdio: 'ignore' });
       log.debug({ message: 'Final Chrome process cleanup' });
     } catch (error) {
-      log.warn({ message: 'Failed final Chrome process cleanup', error: error.message });
+        log.warn({ message: 'Failed final Chrome process cleanup', error: error.message });
     }
   }
 
