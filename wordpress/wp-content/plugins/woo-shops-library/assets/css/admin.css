@@ -1,0 +1,264 @@
+/* Admin CSS for Shops Library aligned with WordPress style */
+.wsl-shops-library-page,
+.wsl-settings-page,
+.wsl-edit-shop-page,
+.wsl-edit-link-page,
+.wsl-links-details-page,
+.wsl-price-retrieval-page {
+    margin: 0 20px 0 0;
+}
+
+.wsl-shops-library-page .search-form,
+.wsl-links-details-page .search-form {
+    margin-bottom: 20px;
+}
+
+.wsl-shops-library-page .search-form input[type="search"],
+.wsl-links-details-page .search-form input[type="search"] {
+    width: 300px;
+    margin-right: 10px;
+}
+
+.wsl-add-new-link-form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    margin-top: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Notices */
+.notice.wsl-notice {
+    margin: 20px 0;
+}
+
+/* Form table spacing */
+.wsl-add-new-link-form .form-table th,
+.wsl-edit-shop-page .form-table th,
+.wsl-edit-link-page .form-table th,
+.wsl-settings-page .form-table th,
+.wsl-price-retrieval-page .form-table th {
+    width: 200px;
+}
+
+/* Standard table styling with WP look */
+.wsl-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wsl-table th,
+.wsl-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #ccd0d4;
+    text-align: left;
+    vertical-align: top;
+}
+
+.wsl-table th {
+    background: #f6f7f7;
+    font-weight: 600;
+}
+
+.wsl-table th a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.wsl-table th a:hover {
+    color: #00a0d2;
+}
+
+.wsl-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.wsl-table .row-actions {
+    visibility: hidden;
+}
+
+.wsl-table tr:hover .row-actions {
+    visibility: visible;
+}
+
+.wsl-table .tablenav {
+    margin: 10px 0;
+}
+
+.wsl-table .tablenav .button {
+    margin-right: 5px;
+}
+
+/* Style the delete button */
+.wsl-table .row-actions .delete .button-link {
+    color: #dc3232;
+}
+
+/* Test interface specific styles */
+.wsl-price-test,
+.wsl-test-results {
+    margin: 20px 0;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wsl-price-test h2,
+.wsl-test-results h2 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.wsl-accordion-item {
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.wsl-accordion-header {
+    padding: 12px 15px;
+    cursor: pointer;
+    background: #f6f7f7;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #ccd0d4;
+    transition: background 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wsl-accordion-header:hover {
+    background: #e9ecef;
+}
+
+.wsl-accordion-item.active .wsl-accordion-header {
+    background: #e9ecef;
+}
+
+.wsl-accordion-content {
+    padding: 15px;
+    display: none;
+    background: #fff;
+}
+
+.wsl-accordion-item.active .wsl-accordion-content {
+    display: block;
+}
+
+.wsl-price-test .form-table {
+    margin-bottom: 0;
+}
+
+.wsl-price-test .form-table th {
+    padding: 8px 10px 8px 0;
+    width: 180px;
+}
+
+.wsl-price-test .form-table td {
+    padding: 8px 0;
+}
+
+.wsl-price-test .form-table input[type="url"],
+.wsl-price-test .form-table input[type="number"] {
+    width: 100%;
+    max-width: 300px;
+}
+
+.wsl-price-test .submit {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.wsl-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('/wp-admin/images/spinner.gif') no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+}
+
+.test-error {
+    color: #dc3232;
+    margin: 5px 0 0;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* Test results table styles */
+.wsl-test-table {
+    margin-top: 15px;
+    border: 1px solid #ccd0d4;
+}
+
+.wsl-test-table th,
+.wsl-test-table td {
+    padding: 10px;
+    font-size: 13px;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.wsl-test-table th {
+    background: #f1f1f1;
+    white-space: nowrap;
+}
+
+.wsl-test-table tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.wsl-test-table .validation-success {
+    color: #008000;
+}
+
+.wsl-test-table .validation-warning {
+    color: #ffa500;
+}
+
+.wsl-test-table .validation-error {
+    color: #ff0000;
+}
+
+#test-no-results {
+    margin: 10px 0;
+    color: #666;
+}
+
+.wsl-test-results .submit {
+    margin-top: 10px;
+    text-align: right;
+}
+
+#copy-test-results {
+    margin-left: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 782px) {
+    .wsl-price-test .form-table th,
+    .wsl-price-test .form-table td {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+    .wsl-price-test .form-table input[type="url"],
+    .wsl-price-test .form-table input[type="number"] {
+        max-width: 100%;
+    }
+    .wsl-price-test .submit {
+        text-align: left;
+    }
+    .wsl-test-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "price-scraper",
+  "version": "1.0.0",
+  "description": "A web scraper for extracting price data from e-commerce websites using Puppeteer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node fast_test_scraper.js",
+    "scrape": "node scraper.js",
+    "health": "curl -s http://127.0.0.1:3000/health",
+    "test-health": "bash test_health.sh",
+    "lint": "eslint .",
+    "install-chromium": "node -e \"require('puppeteer').install()\""
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "puppeteer": "^24.8.0",
+    "winston": "^3.14.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "author": "Tomas Burda",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burdatomas/bubblepop.git"
+  },
+  "keywords": [
+    "web-scraper",
+    "price-scraper",
+    "puppeteer",
+    "e-commerce",
+    "chromium"
+  ]
+}

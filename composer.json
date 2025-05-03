@@ -1,0 +1,30 @@
+{
+  "name": "burdatomas/bubblepop",
+  "description": "Bubblepop WordPress project with plugins and price scraper",
+  "type": "project",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=7.4|^8.1",
+    "wpackagist-plugin/woocommerce": "^9.0"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+    "wp-coding-standards/wpcs": "^2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bubblepop\\": "packages/shared-utils/src"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

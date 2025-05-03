@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  wordpress:
+    image: wordpress:php7.4
+    ports:
+      - "8000:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - ./wordpress:/var/www/html
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - db_data:/var/lib/mysql
+  price-scraper:
+    build:
+      context: ./server/price-scraper
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      AUTH_TOKEN: your-api-key-here
+    volumes:
+      - ./server/price-scraper:/app
+volumes:
+  db_data:
