@@ -26,4 +26,5 @@ server/price-scraper/tests/tmp/
 *.swo
 vendor/
 composer.lock
-package-lock.json
+package-lock.jsonvendor/
+!wordpress/wp-content/plugins/woocommerce/
